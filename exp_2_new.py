@@ -1,4 +1,3 @@
-#IMPLEMENTATION OF MC-CULLOCH- PITTS MODEL
 import random
 random.seed(500)
 w1 = random.randrange(0, 2)

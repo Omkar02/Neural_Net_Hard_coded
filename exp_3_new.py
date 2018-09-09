@@ -5,7 +5,7 @@ w2 = random.randrange(-2, 2)
 bias = random.randrange(-2, 2)
 x1 = [-1,-1,1,1]
 x2 = [-1,1,-1,1]
-y = [-1,-1,-1,1]  #and gate
+y = [-1,-1,-1,1]
 threshold  = 2
 epoch = int(input("The No. of irratrition :"))
 print('Epoch =',0)
@@ -28,10 +28,6 @@ while True:
         y_new = -1
     print(cnt, ':', 'W1: ', w1, 'W2: ', w2,'Bias:',bias_new ,"Output:", y_new, 'Target:', y[cnt])
     cnt += 1
-    # print('why =',cnt ,net_input ,y[3] )
-    #if cnt ==4 and y_new==1 and y[3]==1 and cn==4*epoch-1:
-        #break
-
     if check == 4*epoch-1:
         print("*******************The network is trained*******************")
         print('W1_trained: ', w1, '|', 'W2_trained: ', w2, '|', 'Bias: ', bias_new)
